@@ -15,9 +15,14 @@ namespace UniqueProvider.Generators
             _rnd = new RandomProvider();
             _rnd.Reset(seed);
         }
-        public string Generate()
+        public string Generate(int size)
         {
-            return _rnd.Next().ToString();
+            StringBuilder sb = new StringBuilder(size);
+
+            for (int i = 0; i < size; i++)
+                sb.Append(CharacterSet.list[_rnd.Next(0, 32)]);
+
+            return sb.ToString();
         }
     }
 }

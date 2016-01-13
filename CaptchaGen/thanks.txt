@@ -1,0 +1,3 @@
+﻿https://github.com/demot/RandomOrgJson-RPC
+https://gist.github.com/craigtp/9889530
+BetterRandom

@@ -2,6 +2,6 @@
 {
     public interface IGenerator
     {
-        string Generate();
+        string Generate(int size);
     }
 }

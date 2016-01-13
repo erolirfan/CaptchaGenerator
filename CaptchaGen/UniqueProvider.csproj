@@ -40,9 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\CharacterSet.cs" />
+    <Compile Include="Common\JsonHelper.cs" />
     <Compile Include="Common\RandomProvider.cs" />
+    <Compile Include="Common\RandomOrgApiClient.cs" />
+    <Compile Include="Common\Response.cs" />
+    <Compile Include="Common\Usage.cs" />
     <Compile Include="Generators\Generator.cs" />
     <Compile Include="Generators\MockGenerator.cs" />
+    <Compile Include="Generators\OutsourceGenerator.cs" />
     <Compile Include="Generators\TimeGenerator.cs" />
     <Compile Include="Interfaces\IGenerator.cs" />
   </ItemGroup>
@@ -53,6 +58,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="thanks.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
